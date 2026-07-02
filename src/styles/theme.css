@@ -1,0 +1,29 @@
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --font-size: 16px;
+  --background: #080808;
+  --foreground: #F2E8D9;
+  --card: #111111;
+  --card-foreground: #F2E8D9;
+  --popover: #111111;
+  --popover-foreground: #F2E8D9;
+  --primary: #C9A84C;
+  --primary-foreground: #080808;
+  --secondary: #1a1a1a;
+  --secondary-foreground: #F2E8D9;
+  --muted: #1e1e1e;
+  --muted-foreground: #9A8E7E;
+  --accent: #C9A84C;
+  --accent-foreground: #080808;
+  --destructive: #d4183d;
+  --destructive-foreground: #ffffff;
+  --border: rgba(201, 168, 76, 0.15);
+  --input: transparent;
+  --input-background: #1a1a1a;
+  --switch-background: #2a2a2a;
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+  --ring: #C9A84C;
+  --radius: 0.25rem;
+}
