@@ -1124,6 +1124,12 @@ function Footer({ onBooking }: { onBooking: () => void }) {
       <div className="border-t border-[#C9A84C]/8 py-6">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-3 text-[#F2E8D9]/15 text-xs">
           <div>© 2024 Laurel Fit & Spa. Все права защищены.</div>
+          <div className="text-[#F2E8D9]/25 text-xs">
+            Дизайн-концепт от{" "}
+            <a href="https://prompter.uz/services" target="_blank" rel="noreferrer" className="text-[#C9A84C]/60 hover:text-[#C9A84C] transition-colors">
+              Prompter LLC
+            </a>
+          </div>
           <div className="flex gap-6">
             {["Политика конфиденциальности","Условия использования"].map(l => (
               <span key={l} className="hover:text-[#C9A84C] cursor-pointer transition-colors">{l}</span>
@@ -1160,6 +1166,17 @@ export default function App() {
       <AppShowcase />
       <Testimonials />
       <Footer onBooking={scrollToBooking} />
+
+      {/* Prompter LLC showcase badge */}
+      <a
+        href="https://prompter.uz/services"
+        target="_blank"
+        rel="noreferrer"
+        className="fixed bottom-4 left-4 z-50 flex items-center gap-2 px-3 py-1.5 bg-[#111111]/90 backdrop-blur-sm border border-[#C9A84C]/20 rounded-sm text-[9px] tracking-[0.15em] uppercase text-[#F2E8D9]/40 hover:text-[#C9A84C] hover:border-[#C9A84C]/50 transition-all duration-300"
+      >
+        <span className="w-1.5 h-1.5 rounded-full bg-[#C9A84C]" />
+        Дизайн-концепт · Prompter LLC
+      </a>
     </div>
   );
 }
